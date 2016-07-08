@@ -1,0 +1,27 @@
+{
+  "name": "node-dummy",
+  "description": "node project",
+  "main": "index.html",
+  "authors": [
+    "Anurag"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "angular": "^1.5.7",
+    "bootstrap": "3.3.4",
+    "angular-ui-router": "^0.3.1"
+  },
+  "resolutions": {
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {}
+}

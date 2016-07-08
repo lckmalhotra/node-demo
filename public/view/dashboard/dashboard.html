@@ -1,0 +1,26 @@
+<h3 class="sub-header">Driver List</h3>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="driver in ctrl.drivers">
+            <td>{{$index+1}}</td>
+            <td>{{driver.name}}</td>
+            <td>{{driver.age}}</td>
+            <td>{{driver.city}}</td>
+            <td>
+                <input type="button" class="btn" ng-click="ctrl.removeDriver(driver._id)" value="X"> |
+                <input type="button" class="btn" ng-click="ctrl.editDriver(driver._id)" value="Edit">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

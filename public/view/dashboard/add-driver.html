@@ -1,0 +1,18 @@
+<h3 class="sub-header">Add Driver</h3>
+
+<form>
+    <div class="form-group">
+        <label>Driver Name</label>
+        <input type="text" class="form-control" ng-model="ctrl.formData.name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" class="form-control" ng-model="ctrl.formData.age" placeholder="Age">
+    </div>
+    <div class="form-group">
+        <label>City</label>
+        <input type="text" class="form-control" ng-model="ctrl.formData.city" placeholder="City">
+    </div>
+    <button ng-if="!ctrl.driverId" type="submit" ng-click="ctrl.addDrivers(ctrl.formData)" class="btn btn-default">Add Driver</button>
+    <button ng-if="ctrl.driverId" type="submit" ng-click="ctrl.editDrivers(ctrl.formData)"class="btn btn-default">Edit Driver</button>
+</form>
